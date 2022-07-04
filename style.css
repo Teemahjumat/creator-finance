@@ -89,9 +89,9 @@
     background-position: center;
     margin-top: 80px;
 }
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 .carousel{
     overflow-x: scroll;
     display: flex;
@@ -146,10 +146,10 @@ color: brown !important;
 }
 
 @media screen and (max-width:900px) {
-    body{
+    /* body{
         width: 100%;
         overflow-x: hidden;
-    }
+    } */
     .parent{
         display: block;
         width: 100%;
@@ -214,9 +214,9 @@ color: brown !important;
 }    
 
 @media screen and (max-width:600px) {
-    body{
+    /* body{
         overflow-x: hidden;
-    }
+    } */
     .bank{
         font-size: 2em; 
     }
