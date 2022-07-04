@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.parent{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+.bank{
+    font-size: 4em; 
+    line-height: 1.5;
+}
+.stack{
+    background-image: url(./images/home.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.image-phone{
+    display: none;
+}
+
+.form > input{
+    width: 400px;
+    height: 70px;
+    border-radius: 35px;
+    border: 1px solid rgb(59, 200, 137);
+    padding: 30px;
+}
+.button{
+    color: white;
+    background-color: rgb(59, 200, 137);
+    border: none;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: -160px;
+    
+}
+.button:hover{
+    cursor: pointer;
+    filter:invert(100%);
+}
+
+.build{
+    margin-top: 350px;
+    background-image: url(./images/cta.png);
+    height: 85vh;
+    background-repeat: no-repeat;
+     background-size: cover; 
+    background-position: center; 
+
+}
+.form1 > input{
+    margin-top: 150px;
+    width: 500px;
+    height: 70px;
+    border-radius: 35px;
+    border: 1px solid rgb(59, 200, 137);
+    padding: 30px;
+}
+.button1{
+    color: white;
+    background-color: rgb(59, 200, 137);
+    border: none;
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: -110px;
+    
+}
+.button1:hover{
+    cursor: pointer;
+    filter:invert(100%);
+}
+.scroll{
+    background-image: url(./images/galley.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+body{
+    overflow-x: hidden;
+}
+.carousel{
+    overflow-x: scroll;
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 50px;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    background-image: url(./images/Footer.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+.product:hover {
+color: brown !important;
+}
+
+.row{
+    line-height: 1.6;
+}
+.foot{
+    font-size:25px;
+}
+.create{
+    margin-top:150px;
+}
+
+
+
+@media screen and (min-width:950px) and (max-width:1199px) {
+    .stack{
+        background-image: url(./images/home.png);
+        height: 140vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        
+    }
+    .scroll{
+        height: auto;
+        width: 100%;
+    }
+    .foot{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .parent{
+        display: block;
+        width: 100%;
+        margin-left: 30px;
+    
+    }
+    .image-web{
+        display: none;
+    }
+    .image-phone{
+        display:block;
+        width: 80%;
+    }
+    .stack{
+        background-image: url(./images/hero.png);
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .form > input{
+        width: 400px;
+        height: 70px;
+        border-radius: 35px;
+        border: 1px solid rgb(59, 200, 137);
+        padding: 30px;
+    }
+    .build{
+        margin-top: 150px;
+        background-image: url(./images/crea.png);
+        height:auto;
+        width: 100%;
+        background-repeat: no-repeat;
+         background-size: cover; 
+        background-position: center; 
+    
+    }
+    .scroll{
+        height: auto;
+        width: 100%;
+
+    }
+    footer{
+        background-image: url(./images/Footer1.png);
+        height:auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 100px;
+    }
+    .fintech{
+        margin-top: -100px !important;
+        margin-bottom: 50px;
+    }
+    .carousel{
+        width: 100%;
+    
+    }
+    
+}    
+
+@media screen and (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .bank{
+        font-size: 2em; 
+    }
+    .form > input{
+        width: 260px !important;
+        height: 60px;
+        padding: 20px;
+        font-size: 13px;
+    }
+    .button{
+        width: 90px;
+        height: 50px;
+        margin-left: -100px;    
+        
+    }
+    .form1 > input{
+        width: 300px;
+        height: 60px;
+        padding: 30px;
+    }
+    .button1{
+        width: 90px;
+        height: 50px;
+        margin-left: -100px;
+        
+    }
+}
