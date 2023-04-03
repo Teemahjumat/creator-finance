@@ -2,13 +2,9 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: cursive;
 }
-/* body{
-    background-color:burlywood;
-} */
 .parent{
-    margin-top: 120px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -16,20 +12,16 @@
     flex-basis: auto;
     flex-shrink: 1;
 }
-.h2{
-    padding-left: 60px;
-}
 .bank{
-    font-size: 3em; 
+    font-size: 4em; 
     line-height: 1.5;
 }
-.header{
+.stack{
     background-image: url(./images/home.png);
-    height: 70vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    gap: 20px;
     
 }
 .image-phone{
@@ -41,7 +33,7 @@
     height: 70px;
     border-radius: 35px;
     border: 1px solid rgb(59, 200, 137);
-    padding: 20px;
+    padding: 30px;
 }
 .button{
     color: white;
@@ -50,9 +42,7 @@
     width: 150px;
     height: 60px;
     border-radius: 30px;
-    /* margin-left: -160px; */
-    position: relative;
-    right: 160px;
+    margin-left: -160px;
     
 }
 .button:hover{
@@ -61,7 +51,7 @@
 }
 
 .build{
-    margin-top: 200px;
+    margin-top: 350px;
     background-image: url(./images/cta.png);
     height: 85vh;
     background-repeat: no-repeat;
@@ -76,7 +66,6 @@
     border-radius: 35px;
     border: 1px solid rgb(59, 200, 137);
     padding: 30px;
-    font-size: 15px;
 }
 .button1{
     color: white;
@@ -94,14 +83,15 @@
 }
 .scroll{
     background-image: url(./images/galley.png);
-    height: 90vh;
+    height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 80px;
 }
-
-
+/* body{
+    overflow-x: hidden;
+} */
 .carousel{
     overflow-x: scroll;
     display: flex;
@@ -109,6 +99,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 50px;
+    animation-iteration-count: infinite;
 }
 
 footer{
@@ -127,7 +118,7 @@ color: brown !important;
     line-height: 1.6;
 }
 .foot{
-    font-size:20px;
+    font-size:25px;
 }
 .create{
     margin-top:150px;
@@ -136,10 +127,7 @@ color: brown !important;
 
 
 @media screen and (min-width:950px) and (max-width:1199px) {
-    body{
-        width: 95%;
-    }
-    .header{
+    .stack{
         background-image: url(./images/home.png);
         height: 140vh;
         background-repeat: no-repeat;
@@ -148,24 +136,12 @@ color: brown !important;
         width: 100%;
         
     }
-    .button{
-        color: white;
-        background-color: rgb(59, 200, 137);
-        border: none;
-        width: 100px;
-        height: 60px;
-        border-radius: 30px;
-        /* margin-left: -60px; */
-        position: relative;
-        left:290px;
-        bottom: 65px ;
-    }
     .scroll{
         height: auto;
         width: 100%;
     }
     .foot{
-        font-size: 19px;
+        font-size: 20px;
     }
 }
 
@@ -180,9 +156,6 @@ color: brown !important;
         margin-left: 30px;
     
     }
-    .bank{
-        font-size: 2.5em;
-    }
     .image-web{
         display: none;
     }
@@ -190,7 +163,7 @@ color: brown !important;
         display:block;
         width: 80%;
     }
-    .header{
+    .stack{
         background-image: url(./images/hero.png);
         width: 100%;
         height: auto;
@@ -199,29 +172,14 @@ color: brown !important;
         background-position: center;
     }
     .form > input{
-        width: 90%;
-        height: auto;
+        width: 400px;
+        height: 70px;
         border-radius: 35px;
         border: 1px solid rgb(59, 200, 137);
         padding: 30px;
-        font-size: 13px;
     }
-
-.button{
-    color: white;
-    background-color: rgb(59, 200, 137);
-    border: none;
-    width: 25%;
-    height: 60px;
-    border-radius: 30px;
-    /* margin-left: -160px; */
-    position: relative;
-    left: 300px;
-    bottom:70px ;
-}
-  
     .build{
-        margin-top: 200px;
+        margin-top: 150px;
         background-image: url(./images/crea.png);
         height:auto;
         width: 100%;
@@ -248,70 +206,45 @@ color: brown !important;
         margin-top: -100px !important;
         margin-bottom: 50px;
     }
-    /* .carousel{
+    .carousel{
         overflow-x: scroll !important;
         width: 100%;
     
-    } */
-    .carousel > img{
-        width: 300px !important;
-        height: auto !important;
     }
-    .graph{
-        padding-left: 0px!important;
-    }
+    
 }    
 
 @media screen and (max-width:600px) {
-    body{
-        /* overflow-x: hidden; */
-        width: 95%;
-    } 
-    /* .bank{
+    /* body{
+        overflow-x: hidden;
+    }  */
+    .bank{
         font-size: 2em; 
-    } */
-    /* .form > input{
+    }
+    .form > input{
         width: 260px !important;
         height: 60px;
         padding: 20px;
         font-size: 13px;
-    } */
-    /* .button{
+    }
+    .button{
         width: 90px;
         height: 50px;
         margin-left: -100px;    
         
-    } */
-    .button{
-        color: white;
-        background-color: rgb(59, 200, 137);
-        border: none;
-        width: 100px;
-        height: 60px;
-        border-radius: 30px;
-        /* margin-left: -160px; */
-        position: relative;
-        left: 190px;
-        bottom:70px ;
     }
-
-    
     .form1 > input{
         width: 300px;
         height: 60px;
         padding: 30px;
-        font-size: 15px  !important;
     }
-    i
     .button1{
         width: 90px;
         height: 50px;
         margin-left: -100px;
         
     }
-    /* .carousel{
+    .carousel{
         overflow-x: scroll !important;
-    }     */
-
-    
+    }    
 }
