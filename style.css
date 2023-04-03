@@ -8,9 +8,9 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    flex-grow: 0;
+    /* flex-grow: 0;
     flex-basis: auto;
-    flex-shrink: 1;
+    flex-shrink: 1; */
 }
 .bank{
     font-size: 4em; 
@@ -22,6 +22,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0 auto !important;
+vertical-align: middle;
     
 }
 .image-phone{
@@ -81,26 +83,25 @@
     cursor: pointer;
     filter:invert(100%);
 }
-.scroll{
+
+.scroll {
     background-image: url(./images/galley.png);
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 80px;
-}
-/* body{
-    overflow-x: hidden;
-} */
-.carousel{
+  }
+  
+  .carousel {
     overflow-x: scroll;
     display: flex;
     gap: 100px;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 50px;
-    animation-iteration-count: infinite;
-}
+  }
+  
 
 footer{
     background-image: url(./images/Footer.png);
@@ -128,18 +129,14 @@ color: brown !important;
 
 @media screen and (min-width:950px) and (max-width:1199px) {
     .stack{
-        background-image: url(./images/home.png);
         height: 140vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         width: 100%;
         
     }
-    .scroll{
+    .scroll {
         height: auto;
         width: 100%;
-    }
+      }
     .foot{
         font-size: 20px;
     }
@@ -153,7 +150,7 @@ color: brown !important;
     .parent{
         display: block;
         width: 100%;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     
     }
     .image-web{
@@ -205,12 +202,13 @@ color: brown !important;
     .fintech{
         margin-top: -100px !important;
         margin-bottom: 50px;
+        /* text-align: center; */
     }
-    .carousel{
+    /* .carousel{
         overflow-x: scroll !important;
         width: 100%;
     
-    }
+    } */
     
 }    
 
@@ -244,7 +242,7 @@ color: brown !important;
         margin-left: -100px;
         
     }
-    .carousel{
+    /* .carousel{
         overflow-x: scroll !important;
-    }    
+    }     */
 }
